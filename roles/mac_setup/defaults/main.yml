@@ -1,0 +1,52 @@
+# If we should install our dotfiles or not
+dotfiles_install: True
+dotfiles_repo: https://raw.githubusercontent.com/nickmaccarthy/dotfiles/master
+dotfiles_items:
+    - .bash_profile
+    - .bash_prompt
+    - .vimrc
+
+additional_dotfiles_items: []
+
+brew_base_items:
+  - vim
+  - git
+  - wget
+  - nmap
+  - sqlite
+  - go
+  - node
+  - cabextract
+  - htop
+  - lsof
+
+additional_brew_base_items: []
+
+brew_cask_items:
+  - docker
+  - dropbox
+  - iterm2
+  - vagrant
+  - sequel-pro
+  - slack
+  - transmit
+  - firefox
+  - google-chrome
+  - spotify
+  - skitch
+  - alfred
+
+additional_brew_cask_items: []
+
+pip_items:
+  - virtualenv
+  - virtualenv-mgr
+
+additional_pip_items: []
+
+pathogen_plugins:
+     - repo: "https://github.com/elixir-lang/vim-elixir.git"
+     - repo: "https://github.com/docunext/closetag.vim.git"
+     - repo: "https://github.com/kevinw/pyflakes-vim.git"
+
+additional_pathogen_plugins: []

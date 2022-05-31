@@ -1,0 +1,4 @@
+*.swp
+*.retry
+venv*
+*kuberc*

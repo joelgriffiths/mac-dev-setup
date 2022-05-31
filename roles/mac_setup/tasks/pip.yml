@@ -1,0 +1,9 @@
+- set_fact:
+    all_pip_items: "{{ pip_items + additional_pip_items }}"
+    
+- name: Install the pip things
+  pip:
+    name: "{{item}}"
+  with_items: "{{ pip_items }}"
+  ignore_errors: true
+  become: yes
